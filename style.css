@@ -1,0 +1,18 @@
+.header{
+    position:  fixed;
+    top: 0;
+    width:  100%;
+    left:0;
+    margin-bottom: 10rem ;
+    background-color: red;
+    height:  80px;
+    border-bottom-right-radius:  50px;
+    border-bottom-left-radius:  50px;
+}
+.header h1{
+    color: black;
+    font-size:  2rem;
+    font-weight: bold;
+    text-align: center;
+
+}
