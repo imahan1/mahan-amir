@@ -99,6 +99,15 @@ body {
     font-weight: bold;
     text-align: center;
 
+
+}
+
+.header .logo {
+    margin-right: 3rem;
+    margin-left: 55rem;
+    height: 10rem;
+    border-radius: 80rem;
+    border-color: black;
 }
 
 .footer {
@@ -110,6 +119,7 @@ body {
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
 }
+
 .footer h1 {
     color: black;
     font-size: 2rem;
