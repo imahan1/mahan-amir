@@ -443,6 +443,7 @@ body {
   height: 100px;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
+  border-bottom: solid yellow 5px;
 }
 
 .header h1 {
@@ -461,6 +462,7 @@ body {
   background-size: contain;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
+  border-top: solid yellow 5px;
 }
 
 .footer h1 {
