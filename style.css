@@ -439,7 +439,8 @@ body {
   left: 0;
   margin-bottom: 10rem;
   background-image: url(./img/giphy.gif);
-  height: 15rem;
+  background-size: contain;
+  height: 100px;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
 }
@@ -451,20 +452,13 @@ body {
   text-align: center;
 }
 
-.header .logo {
-  margin-right: 3rem;
-  margin-left: 55rem;
-  height: 10rem;
-  border-radius: 80rem;
-  border-color: black;
-}
-
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   left: 0;
-  background-color: red;
+  background-image: url(./img/kiki.gif);
+  background-size: contain;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
 }
