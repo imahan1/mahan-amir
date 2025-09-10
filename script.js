@@ -5,6 +5,7 @@
 //   hamburger.classList.toggle("active");
 //   menu.classList.toggle("active");
 // });
+
 const searchBar = document.querySelector(".search-bar-container");
 const magnifier = document.querySelector(".magnifier");
 
