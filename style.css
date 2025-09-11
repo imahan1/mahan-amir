@@ -33,7 +33,7 @@
   margin-bottom: 10px;
   position: absolute;
   top: 220px;
-  left: 30px;
+  left: 220px;
   transition: width 0.6s;
   overflow: hidden;     /* تا اجزا بیرون نزنه */
   z-index: 1000;
@@ -112,6 +112,21 @@
 }
 
 /*-------------------------------------------------------------------------------------*/
-/* دکمه های پایین هدر */
+/* کد پایین برای ایکون ادمک هست */
+
+.icon_sign_in_out{
+  background-color: azure;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  right: 140px;
+  top: 220px;
+
+}
+.icon_sign_in_out img {
+  width: 40px;
+  height: 40px;
+}
 
 
+/*-------------------------------------------------------------------------------------*/
