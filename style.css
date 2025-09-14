@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,128 +6,167 @@
 .heder {
   width: 100%;
   height: 300px;
-  background-image: url(./img/Loop\ Star\ GIF.gif);
+  background-image: url(./img/fsfh.gif);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  /* box-shadow: inset 0 -8px 12px rgba(0, 0, 0, 0.3); */
+}
+h1 {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Luckiest Guy", serif;
+  cursor: default;
+  position: absolute;
+  top: 100px;
+  left: 450px;
+  /* text-align: center; */
+}
+h1 span {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+  color: #06bc9d;
+  text-shadow: 0 1px 0 #e6ff01, 0 2px 0 #e6ff01, 0 3px 0 #e6ff01,
+    0 4px 0 #e6ff01, 0 5px 0 #e6ff01, 0 6px 0 transparent, 0 7px 0 transparent,
+    0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgb(252, 1, 1);
+  animation: amir 0.6s ease infinite alternate;
+}
+@keyframes amir {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #e6ff01, 0 2px 0 #e6ff01, 0 3px 0 #e6ff01,
+      0 4px 0 #e6ff01, 0 5px 0 #e6ff01, 0 6px 0 #e6ff01, 0 7px 0 #e6ff01,
+      0 8px 0 #e6ff01, 0 9px 0 #e6ff01, 0 50px 25px rgb(2, 196, 255);
+  }
 }
 .hed {
   width: 100%;
-  height: 182px;
+  height: 80px;
   padding-top: 10px;
   background-image: url(./img/hed.gif);
   background-size: contain;
-  border-radius: 100px;
+  /* border-radius: 100px; */
   border: black solid;
+  position: absolute;
+  top: 0px;
 }
 
 /*-------------------------------------------------------------------------------------*/
 /* کد های پایین برای سرج سایت هست */
-.search-bar-container {
+.box {
   display: flex;
+  position: absolute;
+  top: 250px;
+  left: 650px;
+  border-radius: 3rem;
   align-items: center;
-  background-color: white;
-  padding: 5px;
-  width: 50px;          /* پیشفرض بسته */
-  height: 50px;
-  border-radius: 50px;
-  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.55);
-  margin-bottom: 10px;
-  position: absolute;
-  top: 220px;
-  left: 220px;
-  transition: width 0.6s;
-  overflow: hidden;     /* تا اجزا بیرون نزنه */
-  z-index: 1000;
+  transform: translate(-50%, -50%);
+  background: #e6ff01;
+  height: 3rem;
+  box-shadow: 0 1px 0 rgb(1, 221, 250), 0 2px 0 rgb(1, 221, 250),
+    0 3px 0 rgb(1, 221, 250), 0 4px 0 rgb(1, 221, 250), 0 5px 0 rgb(1, 221, 250),
+    0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgb(252, 1, 1);
 }
-
-.search-bar-container.active {
-  width: 300px;         /* وقتی باز شد */
-}
-
-.magnifier {
-  width: 25px;
-  cursor: pointer;
-  position: absolute;
-  left: 20px;
-}
-
-.mic-icon {
-  width: 0;             /* پیشفرض مخفی */
-  position: absolute;
-  right: 10px;
-  transition: width 0.3s;
-  transition-delay: 0.3s;
-}
-
-.search-bar-container.active .mic-icon {
-  width: 30px;          /* وقتی باز شد */
-}
-
-.input {
-  background-color: transparent;
-  border: none;
-  margin: 10px 50px;
-  width: 0;             /* پیشفرض بسته */
+.serchto {
+  background: none;
   outline: none;
-  color: rgb(100, 100, 100);
-  transition: width 0.3s;
-  transition-delay: 0.3s;
+  float: left;
+  padding: 0;
+  border: none;
+  border-radius: 3rem;
+  color: rgb(255, 2, 2);
+  font-size: 18px;
+  transition: 1s;
+  width: 0px;
 }
-
-.search-bar-container.active .input {
-  width: 100%;          /* وقتی باز شد */
+.button {
+  border: none;
+  background-color: #7703fc;
+  background-image: url(img/icons8-search-128.png);
+  background-size: contain;
+  font-size: 18px;
+  float: right;
+  color: chartreuse;
+  cursor: pointer;
+  border-radius: 3rem;
+  height: 3rem;
+  width: 3rem;
 }
-
+.box:hover > .serchto {
+  width: 300px;
+  padding-left: 20px;
+}
+.box:hover > .button {
+  /* background-color: wheat; */
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-left: 6px;
+}
+.serchto:focus {
+  width: 300px;
+  padding-left: 20px;
+}
 
 /*-------------------------------------------------------------------------------------*/
 /*کد پایین برای لوگوی ابی hello هست */
 
-.content{
+.content {
   position: relative;
   margin-left: 50%;
   margin-right: 50%;
   margin-top: 20rem;
-
 }
 
-.content h2{
+.content h2 {
   position: absolute;
   transform: translate(-50%, -50%);
   font-size: 25em;
 }
-.content h2:nth-child(1){
+.content h2:nth-child(1) {
   color: transparent;
   -webkit-text-stroke: 2px #03a9f4;
 }
-.content h2:nth-child(2){
+.content h2:nth-child(2) {
   color: #03a9f4;
   animation: wave 4s ease-in-out infinite;
 }
-@keyframes wave{
-  0%, 100%{
-    clip-path: polygon(0% 49%, 13% 58%, 25% 63%, 40% 63%, 56% 58%, 64% 51%, 80% 46%, 92% 44%, 99% 45%, 99% 100%, 0% 100%);
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 49%,
+      13% 58%,
+      25% 63%,
+      40% 63%,
+      56% 58%,
+      64% 51%,
+      80% 46%,
+      92% 44%,
+      99% 45%,
+      99% 100%,
+      0% 100%
+    );
   }
-  50%{
-    clip-path: polygon(0 45%, 13% 42%, 23% 40%, 38% 39%, 49% 41%, 60% 45%, 75% 50%, 89% 52%, 100% 46%, 100% 100%, 0% 100%);
+  50% {
+    clip-path: polygon(
+      0 45%,
+      13% 42%,
+      23% 40%,
+      38% 39%,
+      49% 41%,
+      60% 45%,
+      75% 50%,
+      89% 52%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
   }
 }
 
 /*-------------------------------------------------------------------------------------*/
 /* کد پایین برای ایکون ادمک هست */
-
-.icon_sign_in_out{
-  background-color: azure;
-  padding: 10px;
-  border-radius: 50%;
-  position: absolute;
-  right: 140px;
-  top: 220px;
-
-}
-.icon_sign_in_out img {
-  width: 40px;
-  height: 40px;
-}
-
 
 /*-------------------------------------------------------------------------------------*/

@@ -1,10 +1,4 @@
-const searchBar = document.querySelector(".search-bar-container");
-const magnifier = document.querySelector(".magnifier");
-const input = document.querySelector(".input");
-
-magnifier.addEventListener("click", () => {
-    searchBar.classList.toggle("active");
-    if (searchBar.classList.contains("active")) {
-        input.focus(); // وقتی باز شد، فوکوس روی input بره
-    }
+const spans = document.querySelectorAll("h1 span");
+spans.forEach((span, index) => {
+  span.style.animationDelay = `${index * 0.1}s`;
 });
