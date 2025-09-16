@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+body {
+  font-family: Lato, sans-serif;
+  --col-deepblue: #4478e3;
+}
 * {
   padding: 0;
   margin: 0;
@@ -112,6 +117,10 @@ h1 span {
 /*-------------------------------------------------------------------------------------*/
 /*کد پایین برای لوگوی ابی hello هست */
 
+main{
+  margin-bottom: 50rem;
+}
+
 .content {
   position: relative;
   margin-left: 50%;
@@ -130,9 +139,9 @@ h1 span {
 }
 .content h2:nth-child(2) {
   color: #03a9f4;
-  animation: wave 4s ease-in-out infinite;
+  animation: wave_H 4s ease-in-out infinite;
 }
-@keyframes wave {
+@keyframes wave_H {
   0%,
   100% {
     clip-path: polygon(
@@ -167,6 +176,98 @@ h1 span {
 }
 
 /*-------------------------------------------------------------------------------------*/
-/* کد پایین برای ایکون ادمک هست */
+/* کد پایین برای فووتر هست */
+
+a {
+  color:#fff;
+  text-decoration:none;
+}
+footer {
+  width:100vw;
+
+}
+footer div {
+  background-color: var(--col-deepblue);
+  margin: -5px 0px 0px 0px;
+  padding:0px;
+  color: #fff;
+  text-align:center;
+}
+svg {
+
+  width:100%;
+  overflow:visible;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #4478e3;
+}
+.drop {
+  fill: var(--col-deepblue);
+  xfill: #99000055;
+  animation: drop 3.2s linear infinite normal;
+  stroke: var(--col-deepblue);
+  stroke-width:0.5;
+  transform: translateY(25px) ;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+.drop1 {
+
+}
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+}
+.drop4 {
+  animation-delay: 1.7s;
+}
+.drop5 {
+  animation-delay: 2.7s;
+  animation-duration:3.1s;
+}
+.drop6 {
+  animation-delay: -2.1s;
+  animation-duration:3.2s;
+}
+.gooeff {
+  filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(25px);
+  }
+  30% {
+    transform: translateY(-10px) scale(.1);
+  }
+  30.001% {
+    transform: translateY(25px) scale(1);
+  }
+  70% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-10px) scale(.1);
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+
 
 /*-------------------------------------------------------------------------------------*/
