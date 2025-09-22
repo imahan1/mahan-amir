@@ -102,10 +102,20 @@ h1 span {
   width: 300px;
   padding-left: 20px;
 }
+/* askorol */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-/*-------------------------------------------------------------------------------------*/
+::-webkit-scrollbar-track {
+  background: transparent;
+}
 
-/*-------------------------------------------------------------------------------------*/
+::-webkit-scrollbar-thumb {
+  background: url("./img/hed.gif");
+  background-size: contain;
+  border-radius: 8px;
+}
 /* کد پایین برای فووتر هست */
 
 a {
@@ -114,6 +124,7 @@ a {
 }
 footer {
   width: 100vw;
+  padding-top: 100px;
 }
 footer div {
   background-color: var(--col-deepblue);
