@@ -31,18 +31,18 @@ h1 span {
   position: relative;
   display: inline-block;
   font-size: 80px;
-  color: #06bc9d;
-  text-shadow: 0 1px 0 #e6ff01, 0 2px 0 #e6ff01, 0 3px 0 #e6ff01,
-    0 4px 0 #e6ff01, 0 5px 0 #e6ff01, 0 6px 0 transparent, 0 7px 0 transparent,
-    0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgb(252, 1, 1);
+  color: #ff9f00;
+  text-shadow: 0 1px 0 #f4631e, 0 2px 0 #f4631e, 0 3px 0 #f4631e,
+    0 4px 0 #f4631e, 0 5px 0 #f4631e, 0 6px 0 transparent, 0 7px 0 transparent,
+    0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px #ff0062;
   animation: amir 0.6s ease infinite alternate;
 }
 @keyframes amir {
   100% {
     top: -20px;
-    text-shadow: 0 1px 0 #e6ff01, 0 2px 0 #e6ff01, 0 3px 0 #e6ff01,
-      0 4px 0 #e6ff01, 0 5px 0 #e6ff01, 0 6px 0 #e6ff01, 0 7px 0 #e6ff01,
-      0 8px 0 #e6ff01, 0 9px 0 #e6ff01, 0 50px 25px rgb(2, 196, 255);
+    text-shadow: 0 1px 0 #f4631e, 0 2px 0 #f4631e, 0 3px 0 #f4631e,
+      0 4px 0 #f4631e, 0 5px 0 #f4631e, 0 6px 0 #f4631e, 0 7px 0 #f4631e,
+      0 8px 0 #f4631e, 0 9px 0 #f4631e, 0 50px 25px #00ff2a;
   }
 }
 
