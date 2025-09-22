@@ -10,8 +10,8 @@ body {
 }
 .heder {
   width: 100%;
-  height: 300px;
-  background-image: url(./img/fsfh.gif);
+  height: 200px;
+  background-color: #309898;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   position: relative;
@@ -23,8 +23,8 @@ h1 {
   font-family: "Luckiest Guy", serif;
   cursor: default;
   position: absolute;
-  top: 100px;
-  left: 450px;
+  top: 20px;
+  left: 33%;
   /* text-align: center; */
 }
 h1 span {
@@ -45,25 +45,14 @@ h1 span {
       0 8px 0 #e6ff01, 0 9px 0 #e6ff01, 0 50px 25px rgb(2, 196, 255);
   }
 }
-.hed {
-  width: 100%;
-  height: 80px;
-  padding-top: 10px;
-  background-image: url(./img/hed.gif);
-  background-size: contain;
-  /* border-radius: 100px; */
-  border: black solid;
-  position: absolute;
-  top: 0px;
-}
 
 /*-------------------------------------------------------------------------------------*/
 /* کد های پایین برای سرج سایت هست */
 .box {
   display: flex;
   position: absolute;
-  top: 250px;
-  left: 650px;
+  top: 150px;
+  left: 48%;
   border-radius: 3rem;
   align-items: center;
   transform: translate(-50%, -50%);
@@ -117,7 +106,7 @@ h1 span {
 /*-------------------------------------------------------------------------------------*/
 /*کد پایین برای لوگوی ابی hello هست */
 
-main{
+main {
   margin-bottom: 50rem;
 }
 
@@ -179,29 +168,27 @@ main{
 /* کد پایین برای فووتر هست */
 
 a {
-  color:#fff;
-  text-decoration:none;
+  color: #fff;
+  text-decoration: none;
 }
 footer {
-  width:100vw;
-
+  width: 100vw;
 }
 footer div {
   background-color: var(--col-deepblue);
   margin: -5px 0px 0px 0px;
-  padding:0px;
+  padding: 0px;
   color: #fff;
-  text-align:center;
+  text-align: center;
 }
 svg {
-
-  width:100%;
-  overflow:visible;
+  width: 100%;
+  overflow: visible;
 }
 
 .wave {
   animation: wave 3s linear;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
   fill: #4478e3;
 }
 .drop {
@@ -209,51 +196,50 @@ svg {
   xfill: #99000055;
   animation: drop 3.2s linear infinite normal;
   stroke: var(--col-deepblue);
-  stroke-width:0.5;
-  transform: translateY(25px) ;
+  stroke-width: 0.5;
+  transform: translateY(25px);
   transform-box: fill-box;
   transform-origin: 50% 100%;
 }
 .drop1 {
-
 }
 .drop2 {
   animation-delay: 3s;
-  animation-duration:3s;
+  animation-duration: 3s;
 }
 .drop3 {
   animation-delay: -2s;
-  animation-duration:3.4s;
+  animation-duration: 3.4s;
 }
 .drop4 {
   animation-delay: 1.7s;
 }
 .drop5 {
   animation-delay: 2.7s;
-  animation-duration:3.1s;
+  animation-duration: 3.1s;
 }
 .drop6 {
   animation-delay: -2.1s;
-  animation-duration:3.2s;
+  animation-duration: 3.2s;
 }
 .gooeff {
   filter: url(#goo);
 }
 #wave2 {
-  animation-duration:5s;
+  animation-duration: 5s;
   animation-direction: reverse;
-  opacity: .6
+  opacity: 0.6;
 }
 #wave3 {
   animation-duration: 7s;
-  opacity:.3;
+  opacity: 0.3;
 }
 @keyframes drop {
   0% {
     transform: translateY(25px);
   }
   30% {
-    transform: translateY(-10px) scale(.1);
+    transform: translateY(-10px) scale(0.1);
   }
   30.001% {
     transform: translateY(25px) scale(1);
@@ -262,12 +248,13 @@ svg {
     transform: translateY(25px);
   }
   100% {
-    transform: translateY(-10px) scale(.1);
+    transform: translateY(-10px) scale(0.1);
   }
 }
 @keyframes wave {
-  to {transform: translateX(-100%);}
+  to {
+    transform: translateX(-100%);
+  }
 }
-
 
 /*-------------------------------------------------------------------------------------*/
